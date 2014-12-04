@@ -1139,7 +1139,7 @@
 [debug] == resolving dependencies lunalist#lunalist$sbt_2.10;1.0-SNAPSHOT->org.scalaz#scalaz-concurrent_2.10;7.0.2 [default->runtime]
 [debug] == resolving dependencies lunalist#lunalist$sbt_2.10;1.0-SNAPSHOT->org.scalaz#scalaz-concurrent_2.10;7.0.2 [default->compile]
 [debug] == resolving dependencies lunalist#lunalist$sbt_2.10;1.0-SNAPSHOT->org.scalaz#scalaz-concurrent_2.10;7.0.2 [default->master]
-[debug] 	resolved ivy file produced in /Users/rene/Desktop/LunaList/target/resolution-cache/lunalist/lunalist$sbt_2.10/1.0-SNAPSHOT/resolved.xml.xml
+[debug] 	resolved ivy file produced in /Users/rene/Documents/workspace/LunaList/target/resolution-cache/lunalist/lunalist$sbt_2.10/1.0-SNAPSHOT/resolved.xml.xml
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] org.scala-sbt#sbt;0.13.0!sbt.jar
 [debug] 	[NOT REQUIRED] com.typesafe.play#sbt-plugin;2.2.1!sbt-plugin.jar
@@ -1219,9 +1219,9 @@
 [debug] 	[NOT REQUIRED] args4j#args4j;2.0.16!args4j.jar
 [debug] 	[NOT REQUIRED] com.google.protobuf#protobuf-java;2.4.1!protobuf-java.jar
 [debug] 	[NOT REQUIRED] com.google.code.findbugs#jsr305;1.3.9!jsr305.jar
-[debug] :: resolution report :: resolve 1700ms :: artifacts dl 102ms
-[debug] 	report for lunalist#lunalist$sbt_2.10;1.0-SNAPSHOT default produced in /Users/rene/Desktop/LunaList/target/resolution-cache/reports/lunalist-lunalist$sbt_2.10-default.xml
-[debug] 	resolve done (1700ms resolve - 102ms download)
+[debug] :: resolution report :: resolve 1734ms :: artifacts dl 88ms
+[debug] 	report for lunalist#lunalist$sbt_2.10;1.0-SNAPSHOT default produced in /Users/rene/Documents/workspace/LunaList/target/resolution-cache/reports/lunalist-lunalist$sbt_2.10-default.xml
+[debug] 	resolve done (1734ms resolve - 88ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: lunalist#lunalist$sources_2.10;1.0-SNAPSHOT
 [debug] 	confs: [default]
@@ -1749,7 +1749,7 @@
 [debug] == resolving dependencies lunalist#lunalist$sources_2.10;1.0-SNAPSHOT->org.scalaz#scalaz-concurrent_2.10;7.0.2 [default->runtime]
 [debug] == resolving dependencies lunalist#lunalist$sources_2.10;1.0-SNAPSHOT->org.scalaz#scalaz-concurrent_2.10;7.0.2 [default->compile]
 [debug] == resolving dependencies lunalist#lunalist$sources_2.10;1.0-SNAPSHOT->org.scalaz#scalaz-concurrent_2.10;7.0.2 [default->master]
-[debug] 	resolved ivy file produced in /Users/rene/Desktop/LunaList/target/resolution-cache/lunalist/lunalist$sources_2.10/1.0-SNAPSHOT/resolved.xml.xml
+[debug] 	resolved ivy file produced in /Users/rene/Documents/workspace/LunaList/target/resolution-cache/lunalist/lunalist$sources_2.10/1.0-SNAPSHOT/resolved.xml.xml
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] org.scala-sbt#sbt;0.13.0!sbt.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#main;0.13.0!main.jar(src)
@@ -1821,6 +1821,6 @@
 [debug] 	[NOT REQUIRED] org.tukaani#xz;1.0!xz.jar(src)
 [debug] 	[NOT REQUIRED] org.specs2#specs2_2.10;2.1.1!specs2_2.10.jar(src)
 [debug] 	[NOT REQUIRED] org.scalaz#scalaz-concurrent_2.10;7.0.2!scalaz-concurrent_2.10.jar(src)
-[debug] :: resolution report :: resolve 251ms :: artifacts dl 90ms
-[debug] 	report for lunalist#lunalist$sources_2.10;1.0-SNAPSHOT default produced in /Users/rene/Desktop/LunaList/target/resolution-cache/reports/lunalist-lunalist$sources_2.10-default.xml
-[debug] 	resolve done (251ms resolve - 90ms download)
+[debug] :: resolution report :: resolve 469ms :: artifacts dl 71ms
+[debug] 	report for lunalist#lunalist$sources_2.10;1.0-SNAPSHOT default produced in /Users/rene/Documents/workspace/LunaList/target/resolution-cache/reports/lunalist-lunalist$sources_2.10-default.xml
+[debug] 	resolve done (469ms resolve - 71ms download)

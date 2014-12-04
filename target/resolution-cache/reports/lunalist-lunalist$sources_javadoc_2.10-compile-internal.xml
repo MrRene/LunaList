@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20141204123157"/>
+		date="20141204143442"/>
 	<dependencies>
 		<module organisation="com.typesafe.play" name="play-cache_2.10">
 			<revision name="2.2.1" status="release" pubdate="20141120064322" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="46">
@@ -421,11 +421,11 @@
 				<metadata-artifact status="no" details="" size="2722" time="0" location="/Users/rene/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/ivy-1.1.2.xml" searched="false" origin-is-local="false" origin-location="file:/Users/rene/Downloads/activator-1.2.10/repository/com.typesafe.netty/netty-http-pipelining/1.1.2/ivys/ivy.xml"/>
 				<caller organisation="lunalist" name="lunalist$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.1.2" rev-constraint-default="1.1.2" rev-constraint-dynamic="1.1.2" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="netty-http-pipelining" type="jar" ext="jar" status="no" details="" size="7012" time="0" location="/Users/rene/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar">
-						<origin-location is-local="false" location="file:/Users/rene/Downloads/activator-1.2.10/repository/com.typesafe.netty/netty-http-pipelining/1.1.2/jars/netty-http-pipelining.jar"/>
-					</artifact>
 					<artifact name="netty-http-pipelining" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3774" time="0" location="/Users/rene/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/srcs/netty-http-pipelining-1.1.2-sources.jar">
 						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/netty/netty-http-pipelining/1.1.2/netty-http-pipelining-1.1.2-sources.jar"/>
+					</artifact>
+					<artifact name="netty-http-pipelining" type="jar" ext="jar" status="no" details="" size="7012" time="0" location="/Users/rene/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar">
+						<origin-location is-local="false" location="file:/Users/rene/Downloads/activator-1.2.10/repository/com.typesafe.netty/netty-http-pipelining/1.1.2/jars/netty-http-pipelining.jar"/>
 					</artifact>
 					<artifact name="netty-http-pipelining" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="34756" time="0" location="/Users/rene/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/docs/netty-http-pipelining-1.1.2-javadoc.jar">
 						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/netty/netty-http-pipelining/1.1.2/netty-http-pipelining-1.1.2-javadoc.jar"/>

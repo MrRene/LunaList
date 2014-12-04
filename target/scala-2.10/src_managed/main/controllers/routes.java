@@ -1,6 +1,6 @@
 // @SOURCE:/Users/rene/Documents/workspace/LunaList/conf/routes
-// @HASH:511320c3f6dda9d5e6a06d76f61d1c774e2ce185
-// @DATE:Thu Dec 04 14:20:11 CET 2014
+// @HASH:0a47ec82bbe4d03c8c67801d662f042b1099ff37
+// @DATE:Thu Dec 04 15:37:10 CET 2014
 
 package controllers;
 

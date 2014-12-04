@@ -14,4 +14,5 @@ object Employee {
     )
 
   def findAll = employees.toList.sortBy(_.id)
+  def findById(id: Int) = employees.find(_.id == id)
 }

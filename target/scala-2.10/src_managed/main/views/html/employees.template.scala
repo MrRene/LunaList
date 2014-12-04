@@ -22,22 +22,24 @@ object employees extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appenda
 Seq[Any](format.raw/*1.29*/("""
 
 """),_display_(Seq[Any](/*3.2*/main("Employees")/*3.19*/ {_display_(Seq[Any](format.raw/*3.21*/("""
-    <h1>Employees</h1>
-    <table class="table table-striped table-condensed col-xs-6">
-        <tr>
-            <th class="col-xs-2">Name</th>
-            <th class="col-xs-2">Email</th>
-            <th class="col-xs-1">Twitter Handle</th>
-        </tr>
-        """),_display_(Seq[Any](/*11.10*/for(employee <- employees) yield /*11.36*/ {_display_(Seq[Any](format.raw/*11.38*/("""
+    <div class="container">
+        <h1>Employees</h1>
+        <table class="table table-striped table-condensed col-xs-6">
             <tr>
-                <td class="col-xs-2">"""),_display_(Seq[Any](/*13.39*/employee/*13.47*/.name)),format.raw/*13.52*/("""</td>
-                <td class="col-xs-2">"""),_display_(Seq[Any](/*14.39*/employee/*14.47*/.email)),format.raw/*14.53*/("""</td>
-                <td class="col-xs-1">"""),_display_(Seq[Any](/*15.39*/employee/*15.47*/.twitterHandle)),format.raw/*15.61*/("""</td>
+                <th class="col-xs-2">Name</th>
+                <th class="col-xs-2">Email</th>
+                <th class="col-xs-1">Twitter Handle</th>
             </tr>
-        """)))})),format.raw/*17.10*/("""
-    </table>
-""")))})),format.raw/*19.2*/("""
+            """),_display_(Seq[Any](/*12.14*/for(employee <- employees) yield /*12.40*/ {_display_(Seq[Any](format.raw/*12.42*/("""
+                <tr>
+                    <td class="col-xs-2"><a href=employees/"""),_display_(Seq[Any](/*14.61*/employee/*14.69*/.id)),format.raw/*14.72*/(""">"""),_display_(Seq[Any](/*14.74*/employee/*14.82*/.name)),format.raw/*14.87*/("""</a></td>
+                    <td class="col-xs-2">"""),_display_(Seq[Any](/*15.43*/employee/*15.51*/.email)),format.raw/*15.57*/("""</td>
+                    <td class="col-xs-1">"""),_display_(Seq[Any](/*16.43*/employee/*16.51*/.twitterHandle)),format.raw/*16.65*/("""</td>
+                </tr>
+            """)))})),format.raw/*18.14*/("""
+        </table>
+    </div>
+""")))})),format.raw/*21.2*/("""
 """))}
     }
     
@@ -50,11 +52,11 @@ Seq[Any](format.raw/*1.29*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Dec 04 14:20:11 CET 2014
+                    DATE: Thu Dec 04 16:04:39 CET 2014
                     SOURCE: /Users/rene/Documents/workspace/LunaList/app/views/employees.scala.html
-                    HASH: afcb47819ae96d14f4210fd055d152f5f2b2b848
-                    MATRIX: 568->1|689->28|726->31|751->48|790->50|1091->315|1133->341|1173->343|1265->399|1282->407|1309->412|1389->456|1406->464|1434->470|1514->514|1531->522|1567->536|1632->569|1678->584
-                    LINES: 19->1|22->1|24->3|24->3|24->3|32->11|32->11|32->11|34->13|34->13|34->13|35->14|35->14|35->14|36->15|36->15|36->15|38->17|40->19
+                    HASH: b40a1c6eec21a6accf1f0e25ba847f1019ccfc34
+                    MATRIX: 568->1|689->28|726->31|751->48|790->50|1151->375|1193->401|1233->403|1351->485|1368->493|1393->496|1431->498|1448->506|1475->511|1563->563|1580->571|1608->577|1692->625|1709->633|1745->647|1818->688|1879->718
+                    LINES: 19->1|22->1|24->3|24->3|24->3|33->12|33->12|33->12|35->14|35->14|35->14|35->14|35->14|35->14|36->15|36->15|36->15|37->16|37->16|37->16|39->18|42->21
                     -- GENERATED --
                 */
             

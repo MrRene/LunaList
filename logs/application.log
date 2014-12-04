@@ -1,6 +1,111 @@
-2014-12-04 14:20:07,742 - [INFO] - from play in pool-17-thread-2 
+2014-12-04 14:44:49,866 - [INFO] - from play in pool-4-thread-1 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2014-12-04 14:20:22,928 - [INFO] - from play in play-internal-execution-context-1 
+2014-12-04 14:45:18,225 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-12-04 14:49:01,297 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-12-04 14:50:24,427 - [INFO] - from play in play-internal-execution-context-2 
+Application started (Dev)
+
+2014-12-04 14:52:20,290 - [INFO] - from play in play-internal-execution-context-3 
+Application started (Dev)
+
+2014-12-04 14:52:59,986 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2014-12-04 14:53:46,080 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2014-12-04 14:54:28,349 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2014-12-04 14:59:03,491 - [INFO] - from play in play-internal-execution-context-7 
+Application started (Dev)
+
+2014-12-04 15:05:21,103 - [INFO] - from play in play-internal-execution-context-9 
+Application started (Dev)
+
+2014-12-04 15:23:24,888 - [INFO] - from play in play-internal-execution-context-10 
+Application started (Dev)
+
+2014-12-04 15:23:25,262 - [INFO] - from play in play-internal-execution-context-10 
+Application started (Dev)
+
+2014-12-04 15:37:25,624 - [INFO] - from play in play-internal-execution-context-11 
+Application started (Dev)
+
+2014-12-04 15:46:44,025 - [INFO] - from play in play-internal-execution-context-11 
+Application started (Dev)
+
+2014-12-04 15:48:29,707 - [INFO] - from play in play-internal-execution-context-12 
+Application started (Dev)
+
+2014-12-04 15:49:12,863 - [INFO] - from play in play-internal-execution-context-13 
+Application started (Dev)
+
+2014-12-04 15:51:16,492 - [INFO] - from play in play-internal-execution-context-14 
+Application started (Dev)
+
+2014-12-04 15:51:48,682 - [INFO] - from play in play-internal-execution-context-15 
+Application started (Dev)
+
+2014-12-04 15:52:49,272 - [INFO] - from play in play-internal-execution-context-16 
+Application started (Dev)
+
+2014-12-04 15:52:58,011 - [INFO] - from play in play-internal-execution-context-17 
+Application started (Dev)
+
+2014-12-04 15:55:11,011 - [INFO] - from play in play-internal-execution-context-17 
+Application started (Dev)
+
+2014-12-04 15:55:32,787 - [INFO] - from play in play-internal-execution-context-18 
+Application started (Dev)
+
+2014-12-04 15:57:27,246 - [INFO] - from play in play-internal-execution-context-19 
+Application started (Dev)
+
+2014-12-04 15:58:29,670 - [INFO] - from play in play-internal-execution-context-20 
+Application started (Dev)
+
+2014-12-04 16:00:52,318 - [INFO] - from play in play-internal-execution-context-21 
+Application started (Dev)
+
+2014-12-04 16:01:54,242 - [INFO] - from play in play-internal-execution-context-22 
+Application started (Dev)
+
+2014-12-04 16:04:15,489 - [INFO] - from play in play-internal-execution-context-23 
+Application started (Dev)
+
+2014-12-04 16:04:40,401 - [INFO] - from play in play-internal-execution-context-25 
+Application started (Dev)
+
+2014-12-04 16:05:00,782 - [INFO] - from play in play-internal-execution-context-26 
+Application started (Dev)
+
+2014-12-04 16:05:24,408 - [INFO] - from play in play-internal-execution-context-26 
+Application started (Dev)
+
+2014-12-04 16:05:39,360 - [INFO] - from play in play-internal-execution-context-28 
+Application started (Dev)
+
+2014-12-04 16:05:47,829 - [INFO] - from play in play-internal-execution-context-28 
+Application started (Dev)
+
+2014-12-04 16:06:36,634 - [INFO] - from play in play-internal-execution-context-28 
+Application started (Dev)
+
+2014-12-04 16:06:47,294 - [INFO] - from play in play-internal-execution-context-29 
+Application started (Dev)
+
+2014-12-04 16:07:19,789 - [INFO] - from play in play-internal-execution-context-30 
+Application started (Dev)
+
+2014-12-04 16:07:57,272 - [INFO] - from play in play-internal-execution-context-31 
+Application started (Dev)
+
+2014-12-04 16:08:10,750 - [INFO] - from play in play-internal-execution-context-32 
 Application started (Dev)
 

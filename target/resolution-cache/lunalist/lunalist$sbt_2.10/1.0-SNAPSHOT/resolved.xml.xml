@@ -4,7 +4,7 @@
 		module="lunalist$sbt_2.10"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20141204123154"
+		publication="20141204143439"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>

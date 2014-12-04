@@ -22,31 +22,30 @@ object main extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,F
 Seq[Any](format.raw/*1.35*/("""
 
 <!DOCTYPE html>
-
 <html>
     <head>
-        <title>LunaList | """),_display_(Seq[Any](/*7.28*/pageName)),format.raw/*7.36*/("""</title>
+        <title>LunaList | """),_display_(Seq[Any](/*6.28*/pageName)),format.raw/*6.36*/("""</title>
+        <link rel="stylesheet" media="screen" href=""""),_display_(Seq[Any](/*7.54*/routes/*7.60*/.Assets.at("stylesheets/bootstrap.min.css"))),format.raw/*7.103*/("""">
         <link rel="stylesheet" media="screen" href=""""),_display_(Seq[Any](/*8.54*/routes/*8.60*/.Assets.at("stylesheets/main.css"))),format.raw/*8.94*/("""">
-        <link rel="stylesheet" media="screen" href=""""),_display_(Seq[Any](/*9.54*/routes/*9.60*/.Assets.at("stylesheets/bootstrap.min.css"))),format.raw/*9.103*/("""">
-        <link rel="shortcut icon" type="image/png" href=""""),_display_(Seq[Any](/*10.59*/routes/*10.65*/.Assets.at("images/favicon.png"))),format.raw/*10.97*/("""">
-        <script src=""""),_display_(Seq[Any](/*11.23*/routes/*11.29*/.Assets.at("javascripts/jquery-1.9.0.min.js"))),format.raw/*11.74*/("""" type="text/javascript"></script>
+        <link rel="shortcut icon" type="image/png" href=""""),_display_(Seq[Any](/*9.59*/routes/*9.65*/.Assets.at("images/favicon.png"))),format.raw/*9.97*/("""">
+        <script src=""""),_display_(Seq[Any](/*10.23*/routes/*10.29*/.Assets.at("javascripts/jquery-1.9.0.min.js"))),format.raw/*10.74*/("""" type="text/javascript"></script>
     </head>
     <body>
-        <div class="container">
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="http://www.lunatech.com">
-                            <img alt="LT" src="...">
-                        </a>
-                    </div>
-                    <ul class="nav navbar-nav">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/employees">Employees</a></li>
-                    </ul>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="http://www.lunatech.com">
+                        <img alt="LT" src="...">
+                    </a>
                 </div>
-            </nav>
-            """),_display_(Seq[Any](/*28.14*/content)),format.raw/*28.21*/("""
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/employees">Employees</a></li>
+                </ul>
+            </div>
+        </nav>
+        """),_display_(Seq[Any](/*26.10*/content)),format.raw/*26.17*/("""
+        <div class="footer">
         </div>
     </body>
 </html>
@@ -62,11 +61,11 @@ Seq[Any](format.raw/*1.35*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Dec 04 14:20:12 CET 2014
+                    DATE: Thu Dec 04 15:05:19 CET 2014
                     SOURCE: /Users/rene/Documents/workspace/LunaList/app/views/main.scala.html
-                    HASH: d082952cf638820d67109af08c413bde94b85827
-                    MATRIX: 560->1|687->34|786->98|815->106|912->168|926->174|981->208|1072->264|1086->270|1151->313|1248->374|1263->380|1317->412|1378->437|1393->443|1460->488|2186->1178|2215->1185
-                    LINES: 19->1|22->1|28->7|28->7|29->8|29->8|29->8|30->9|30->9|30->9|31->10|31->10|31->10|32->11|32->11|32->11|49->28|49->28
+                    HASH: bf17f8ee182877c81c8343e56465df5f8fb91cfd
+                    MATRIX: 560->1|687->34|785->97|814->105|911->167|925->173|990->216|1081->272|1095->278|1150->312|1246->373|1260->379|1313->411|1374->436|1389->442|1456->487|2094->1089|2123->1096
+                    LINES: 19->1|22->1|27->6|27->6|28->7|28->7|28->7|29->8|29->8|29->8|30->9|30->9|30->9|31->10|31->10|31->10|47->26|47->26
                     -- GENERATED --
                 */
             

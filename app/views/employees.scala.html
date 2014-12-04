@@ -1,19 +1,21 @@
 @(employees: List[Employee])
 
 @main("Employees") {
-    <h1>Employees</h1>
-    <table class="table table-striped table-condensed col-xs-6">
-        <tr>
-            <th class="col-xs-2">Name</th>
-            <th class="col-xs-2">Email</th>
-            <th class="col-xs-1">Twitter Handle</th>
-        </tr>
-        @for(employee <- employees) {
+    <div class="container">
+        <h1>Employees</h1>
+        <table class="table table-striped table-condensed col-xs-6">
             <tr>
-                <td class="col-xs-2">@employee.name</td>
-                <td class="col-xs-2">@employee.email</td>
-                <td class="col-xs-1">@employee.twitterHandle</td>
+                <th class="col-xs-2">Name</th>
+                <th class="col-xs-2">Email</th>
+                <th class="col-xs-1">Twitter Handle</th>
             </tr>
-        }
-    </table>
+            @for(employee <- employees) {
+                <tr>
+                    <td class="col-xs-2"><a href=employees/@employee.id>@employee.name</a></td>
+                    <td class="col-xs-2">@employee.email</td>
+                    <td class="col-xs-1">@employee.twitterHandle</td>
+                </tr>
+            }
+        </table>
+    </div>
 }
