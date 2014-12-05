@@ -1,6 +1,7 @@
-# Ignore Play! working directory #
+# .gitignore #
 
 .idea
 /logs
 /project
 /target
+.history
