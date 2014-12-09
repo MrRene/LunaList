@@ -1,7 +1,10 @@
 # .gitignore #
 
 .idea
+.idea_modules
 /logs
-/project
+/project/project
+/project/target
+/projectFilesBackup
 /target
 .history
