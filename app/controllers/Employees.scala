@@ -18,4 +18,8 @@ object Employees extends Controller {
       Ok(views.html.profile(employee))
     }.getOrElse(NotFound)
   }
+
+  def editEmployee = Action {
+    Ok("editEmployee")
+  }
 }
