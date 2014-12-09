@@ -1,4 +1,4 @@
-@(employees: List[Employee])
+@(employees: List[Employee])(implicit flash: Flash)
 
 @main("Employees") {
     <div class="container">
@@ -11,7 +11,7 @@
             </tr>
             @for(employee <- employees) {
                 <tr>
-                    <td class="col-xs-2"><a href=employees/@employee.id>@employee.name</a></td>
+                    <td class="col-xs-2"><a href="@routes.Employees.showEmployee(employee.id)">@employee.name</a></td>
                     <td class="col-xs-2">@employee.email</td>
                     <td class="col-xs-1">@employee.twitterHandle</td>
                 </tr>
