@@ -5,7 +5,7 @@ case class Employee(id: Int, name: String, email: String, twitterHandle: Option[
 object Employee {
 
     var employees = Set(
-      Employee(1,"Rene van der Horst","rene.van.der.horst@lunatech.com",None ),
+      Employee(1,"Rene van der Horst","rene.van.der.horst@lunatech.com",None),
       Employee(2,"Sander Ufkes","sander.ufkes@lunatech.com",None),
       Employee(3,"Thomas Meijer","thomas.meijer@lunatech.com",Some("@TM")),
       Employee(4,"Erik Bakker","erik.bakker@lunatech.com",Some("@EB")),
