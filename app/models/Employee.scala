@@ -15,4 +15,7 @@ object Employee {
 
   def findAll = employees.toList.sortBy(_.id)
   def findById(id: Int) = employees.find(_.id == id)
+  def removeById(id: Int) { employees --= findById(id) }
+  def update(id: Int) { employees ++= findById(id) }
+  def add(employee: Employee) { employees += employee }
 }

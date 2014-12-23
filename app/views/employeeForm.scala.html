@@ -1,0 +1,22 @@
+@(employeeForm: Form[Employee])(implicit flash: Flash)
+
+@import helper._
+@import helper.twitterBootstrap
+
+@main(Messages("Form")) {
+    <h2>Form</h2>
+
+        @helper.form(action = routes.Employees.saveEmployee) {
+
+        <fieldset>
+            @helper.inputText(employeeForm("id"))
+            @helper.inputText(employeeForm("name"))
+            @helper.inputText(employeeForm("email"))
+            @helper.inputText(employeeForm("twitterHandle"))
+        </fieldset>
+        <br>
+        <p>
+            <input type="submit" class="btn primary" value="submit">
+        </p>
+        }
+}

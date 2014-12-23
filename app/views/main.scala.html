@@ -1,4 +1,4 @@
-@(pageName: String)(content: Html)
+@(pageName: String)(content: Html)(implicit flash: Flash)
 
 <!DOCTYPE html>
 <html>
@@ -21,6 +21,7 @@
                     <li><a href="@routes.Application.index">Home</a></li>
                     <li><a href="@routes.Employees.showEmployees">Employees</a></li>
                 </ul>
+
             </div>
         </nav>
         @content

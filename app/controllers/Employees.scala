@@ -1,9 +1,10 @@
 package controllers
 
+import play.api.i18n.Messages
 import play.api.mvc._
 import play.api.mvc.Flash
-import play.api.data._
-import play.api.data.Forms._
+import play.api.data.Form
+import play.api.data.Forms.{mapping, number, text, optional}
 import models.Employee
 
 object Employees extends Controller {
@@ -31,18 +32,36 @@ object Employees extends Controller {
     }.getOrElse(NotFound)
   }
 
-  def editEmployee = Action { implicit request =>
-    val newEmployeeForm = employeeForm.bindFromRequest()
-
-    /*
-    newEmployeeForm.fold(
-
-      hasErrors = { form =>
-        Redirect(routes.Employees.editEmployee)
-      }
-
+  def saveEmployee = Action { implicit request =>
+    employeeForm.bindFromRequest.fold(
+      formWithErrors => BadRequest(views.html.employees(Employee.findAll)),
+      validatedForm => {
+        val newEmployee = models.Employee(validatedForm.id,validatedForm.name, validatedForm.email, validatedForm.twitterHandle)
+        Employee.add(newEmployee)
+        Redirect(routes.Employees.showEmployees) }
     )
-    */
-    Ok("editEmployee")
+  }
+
+  def addEmployee = Action { implicit request =>
+    Ok(views.html.employeeForm(employeeForm))
+  }
+
+  def removeEmployee = Action { implicit request =>
+    Ok("Remove")
+  }
+
+  def editEmployee = Action { implicit request =>
+    Ok("edit")
   }
 }
+
+/*
+def newEmployee = Action { implicit request =>
+  val employeeForm = if (flash.get("error").isDefined)
+    employeeForm.bind(flash.data)
+  else
+    employeeForm
+
+  Ok(views.html.employeeForm)
+}
+*/
