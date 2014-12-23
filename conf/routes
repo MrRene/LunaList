@@ -8,7 +8,7 @@ GET     /                           controllers.Application.index
 # Employees page
 GET     /employees                  controllers.Employees.showEmployees
 GET     /employees/:id              controllers.Employees.showEmployee(id: Int)
-POST    /employees/new              controllers.Employees.saveEmployee
+POST    /employees                  controllers.Employees.saveEmployee
 
 # Add page
 GET     /add                        controllers.Employees.addEmployee

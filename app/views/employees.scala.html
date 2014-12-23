@@ -2,6 +2,18 @@
 
 @main("Employees") {
     <div class="container">
+            @if(flash.get("success").isDefined) {
+                <div class="alert alert-success" role="alert">
+                    <p><b>Success:</b> The list has been updated</p>
+                </div>
+            }
+
+            @if(flash.get("error").isDefined) {
+            <div class="alert alert-danger" role="alert">
+                <p><b>Error:</b> Form submission was invalid</p>
+            </div>
+            }
+
         <h1>Employees</h1>
         <table class="table table-striped table-condensed col-xs-6">
             <tr>

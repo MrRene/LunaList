@@ -34,11 +34,11 @@ object Employees extends Controller {
 
   def saveEmployee = Action { implicit request =>
     employeeForm.bindFromRequest.fold(
-      formWithErrors => BadRequest(views.html.employees(Employee.findAll)),
+      formWithErrors => Redirect(routes.Employees.showEmployees).flashing(Flash(Map("error" -> "Try again"))),
       validatedForm => {
         val newEmployee = models.Employee(validatedForm.id,validatedForm.name, validatedForm.email, validatedForm.twitterHandle)
         Employee.add(newEmployee)
-        Redirect(routes.Employees.showEmployees) }
+        Redirect(routes.Employees.showEmployees).flashing(Flash(Map("success" -> "updated"))) }
     )
   }
 
@@ -51,17 +51,16 @@ object Employees extends Controller {
   }
 
   def editEmployee = Action { implicit request =>
-    Ok("edit")
+    Ok(views.html.employeeForm(employeeForm))
   }
-}
-
 /*
-def newEmployee = Action { implicit request =>
-  val employeeForm = if (flash.get("error").isDefined)
-    employeeForm.bind(flash.data)
-  else
-    employeeForm
+  def newEmployee = Action { implicit request =>
+    val employeeForm = if (flash.get("error").isDefined)
+      employeeForm.bind(flash.data)
+    else
+      employeeForm
 
-  Ok(views.html.employeeForm)
+    Ok(views.html.employeeForm)
+  }
+ */
 }
-*/
