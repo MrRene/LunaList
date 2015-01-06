@@ -3,20 +3,20 @@
 @import helper._
 @import helper.twitterBootstrap
 
-@main(Messages("Form")) {
-    <h2>Form</h2>
+@main("Form") {
 
-        @helper.form(action = routes.Employees.saveEmployee) {
+        @helper.form(action = routes.Employees.createEmployee) {
 
-        <fieldset>
-            @helper.inputText(employeeForm("id"))
-            @helper.inputText(employeeForm("name"))
-            @helper.inputText(employeeForm("email"))
-            @helper.inputText(employeeForm("twitterHandle"))
-        </fieldset>
-        <br>
-        <p>
-            <input type="submit" class="btn primary" value="submit">
-        </p>
+            <fieldset>
+                @helper.inputText(employeeForm("id"))
+                @helper.inputText(employeeForm("name"))
+                @helper.inputText(employeeForm("email"))
+                @helper.inputText(employeeForm("twitterHandle"))
+            </fieldset>
+            <br>
+            <p>
+                <input type="submit" class="btn primary" value="submit">
+                <a href="@routes.Employees.showEmployees" type="button" class="btn btn-default">back</a>
+            </p>
         }
 }

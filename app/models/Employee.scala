@@ -13,9 +13,17 @@ object Employee {
       Employee(6,"Nicolas Leroux","nicolas.leroux@lunatech.com",Some("@LR"))
     )
 
+  // Create (C)
+  def create(employee: Employee) { employees += employee }
+
+  // Read (R)
   def findAll = employees.toList.sortBy(_.id)
   def findById(id: Int) = employees.find(_.id == id)
-  def removeById(id: Int) { employees --= findById(id) }
+
+  // Update (U)
   def update(id: Int) { employees ++= findById(id) }
-  def add(employee: Employee) { employees += employee }
+
+  // Delete (D)
+  def removeById(id: Int) { employees --= findById(id) }
+  def deleteAll() = employees --= findAll
 }

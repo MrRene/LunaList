@@ -1,6 +1,6 @@
 @(employee: Employee)
 
-@main("profile") {
+@main("Profile") {
         <div class="container">
             <div class="row row-centered">
                 <table class="table-striped table-condensed col-xs-4 col-centered">
@@ -20,6 +20,7 @@
             </div>
             <div class="row">
                 <br>
+                <a href="@routes.Employees.editEmployee(employee.id)" type="button" class="btn btn-default">edit</a>
                 <a href="@routes.Employees.showEmployees" type="button" class="btn btn-default">back</a>
             </div>
         </div>
