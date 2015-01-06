@@ -14,10 +14,13 @@ POST    /employees                  controllers.Employees.createEmployee
 GET     /add                        controllers.Employees.addEmployee
 
 # Remove page
-GET     /remove                     controllers.Employees.removeEmployee
+GET     /employees/delete/:id       controllers.Employees.deleteEmployee(id: Int)
+POST    /employees/delete/:id       controllers.Employees.deleteEmployee(id: Int)
+
 
 # Edit page
-GET     /employees/:id/edit         controllers.Employees.editEmployee(id: Int)
+GET     /employees/edit/:id         controllers.Employees.editEmployee(id: Int)
+POST    /employees/edit/:id         controllers.Employees.updateEmployee(id: Int)
 
 
 

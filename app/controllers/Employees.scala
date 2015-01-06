@@ -9,9 +9,18 @@ import models.Employee
 
 object Employees extends Controller {
 
-  private val employeeForm: Form[Employee] = Form(
+  private val createEmployeeForm: Form[Employee] = Form(
     mapping(
       "id" -> number.verifying("validation.id.duplicate", Employee.findById(_).isEmpty),
+      "name" -> text,
+      "email" -> text,
+      "twitterHandle" -> optional(text)
+    ) (Employee.apply)(Employee.unapply)
+  )
+
+  private val updateEmployeeForm: Form[Employee] = Form(
+    mapping(
+      "id" -> number,
       "name" -> text,
       "email" -> text,
       "twitterHandle" -> optional(text)
@@ -22,7 +31,7 @@ object Employees extends Controller {
    * CREATE
    */
   def createEmployee = Action { implicit request =>
-    employeeForm.bindFromRequest.fold(
+    createEmployeeForm.bindFromRequest.fold(
       formWithErrors => Redirect(routes.Employees.showEmployees).flashing(Flash(Map("error" -> "Form submission was invalid."))),
       validatedForm => {
         val newEmployee = models.Employee(validatedForm.id,validatedForm.name, validatedForm.email, validatedForm.twitterHandle)
@@ -32,7 +41,7 @@ object Employees extends Controller {
   }
 
   def addEmployee() = Action { implicit request =>
-    Ok(views.html.createEmployeeForm(employeeForm))
+    Ok(views.html.createEmployeeForm(createEmployeeForm))
   }
 
   /**
@@ -53,22 +62,30 @@ object Employees extends Controller {
   /**
    * UPDATE
    */
+  def updateEmployee(id: Int) = Action { implicit request =>
+    updateEmployeeForm.bindFromRequest.fold(
+      formWithErrors => Redirect(routes.Employees.showEmployees).flashing(Flash(Map("error" -> "Form submission was invalid."))),
+      validatedForm => {
+        val newEmployee = models.Employee(validatedForm.id,validatedForm.name, validatedForm.email, validatedForm.twitterHandle)
+        Employee.update(id, newEmployee)
+        Redirect(routes.Employees.showEmployees).flashing(Flash(Map("success" -> "The list has been updated."))) }
+    )
+  }
+
   def editEmployee(id: Int) = Action { implicit request =>
     Employee.findById(id).map { employee =>
-      Ok(views.html.editEmployeeForm(employeeForm))
+      Ok(views.html.editEmployeeForm(updateEmployeeForm, id))
     }.getOrElse(NotFound)
   }
-/*
-  def edit(id: Long) = Action {
-    Computer.findById(id).map { computer =>
-      Ok(html.editForm(id, computerForm.fill(computer)))
-    }.getOrElse(NotFound)
-  }
-  */
 
   /**
    * DELETE
    */
+  def deleteEmployee(id: Int) = Action { implicit request =>
+    Employee.removeById(id)
+    Redirect(routes.Employees.showEmployees)
+  }
+
   def removeEmployee() = Action { implicit request =>
     Ok("Remove")
   }

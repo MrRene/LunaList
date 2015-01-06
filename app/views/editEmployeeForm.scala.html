@@ -1,14 +1,15 @@
-@(employeeForm: Form[Employee])(implicit flash: Flash)
+@(employeeForm: Form[Employee], id: Int)
 
 @import helper._
 @import helper.twitterBootstrap
 
 @main("Edit employee") {
 
-        @helper.form(action = routes.Employees.createEmployee) {
+        @helper.form(action = routes.Employees.updateEmployee(id)) {
 
             <fieldset>
-                @helper.inputText(employeeForm("id"))
+
+                @helper.inputText(employeeForm("id"), '_label -> "ID")
                 @helper.inputText(employeeForm("name"))
                 @helper.inputText(employeeForm("email"))
                 @helper.inputText(employeeForm("twitterHandle"))

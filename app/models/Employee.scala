@@ -21,7 +21,10 @@ object Employee {
   def findById(id: Int) = employees.find(_.id == id)
 
   // Update (U)
-  def update(id: Int) { employees ++= findById(id) }
+  def update(id: Int, employee: Employee) = {
+    removeById(id)
+    create(employee)
+  }
 
   // Delete (D)
   def removeById(id: Int) { employees --= findById(id) }
