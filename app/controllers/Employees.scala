@@ -32,7 +32,7 @@ object Employees extends Controller {
   }
 
   def addEmployee() = Action { implicit request =>
-    Ok(views.html.employeeForm(employeeForm))
+    Ok(views.html.createEmployeeForm(employeeForm))
   }
 
   /**
@@ -54,7 +54,9 @@ object Employees extends Controller {
    * UPDATE
    */
   def editEmployee(id: Int) = Action { implicit request =>
-    Ok(views.html.employeeForm(employeeForm))
+    Employee.findById(id).map { employee =>
+      Ok(views.html.editEmployeeForm(employeeForm))
+    }.getOrElse(NotFound)
   }
 /*
   def edit(id: Long) = Action {
