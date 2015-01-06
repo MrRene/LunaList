@@ -14,19 +14,19 @@ object Employee {
     )
 
   // Create (C)
-  def create(employee: Employee) { employees += employee }
+  def create(employee: Employee):Unit = { employees += employee }
 
   // Read (R)
   def findAll = employees.toList.sortBy(_.id)
   def findById(id: Int) = employees.find(_.id == id)
 
   // Update (U)
-  def update(id: Int, employee: Employee) = {
+  def update(id: Int, employee: Employee):Unit = {
     removeById(id)
     create(employee)
   }
 
   // Delete (D)
-  def removeById(id: Int) { employees --= findById(id) }
-  def deleteAll() = employees --= findAll
+  def removeById(id: Int):Unit =  { employees --= findById(id) }
+  def deleteAll():Unit = employees --= findAll
 }
