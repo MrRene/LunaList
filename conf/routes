@@ -17,12 +17,9 @@ GET     /add                        controllers.Employees.addEmployee
 GET     /employees/delete/:id       controllers.Employees.deleteEmployee(id: Int)
 POST    /employees/delete/:id       controllers.Employees.deleteEmployee(id: Int)
 
-
 # Edit page
 GET     /employees/edit/:id         controllers.Employees.editEmployee(id: Int)
 POST    /employees/edit/:id         controllers.Employees.updateEmployee(id: Int)
-
-
 
 
 # Map static resources from the /public folder to the /assets URL path
